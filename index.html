@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Hiking Application/Survey</h1>
+            <p id="description" class="description text-center">Fill in and answer the questions below to apply for the hike</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input class="form-control" id="name" required type="text" placeholder="Enter Your Name" />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input class="form-control" id="email" required type="email" placeholder="Enter Your Email" />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input class="form-control" id="number" type="number" min="16" max="80" placeholder="Enter Your Age">
+            </div> 
+                <div class="form-group">
+                    <label>How physically active are you?</label>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select</option>
+                        <option value="not">Not Very Fit</option>
+                        <option value="decent">Decently Fit</option>
+                        <option value="lot">Quite Fit</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Have you hiked before?</label>
+                    <label>
+                        <input class="input-radio" name="radio" type="radio" value="yes" />Yes
+                    </label>
+                    <label>
+                        <input class="input-radio" name="radio" type="radio" value="no" />No
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Which activities do you partake in? (Select all which apply)</label>
+                    <label>
+                        <input name="check" value="good" type="checkbox" class="input-checkbox"/>Sports
+                    </label>
+                    <label>
+                        <input name="check" value="alright" type="checkbox" class="input-checkbox"/>Gym
+                    </label>
+                    <label>
+                    <input name="check" value="bad" type="checkbox" class="input-checkbox"/>Dancing
+                    </label>
+                    <label>
+                        <input name="check" value="" type="checkbox" class="input-checkbox"/>Running
+                    </label>
+                    <label>
+                        <input name="check" value="" type="checkbox" class="input-checkbox"/>Hiking
+                    </label>
+                </div>
+
+
+            <div class="form-group">
+                <p>Is there anything we will have to accomodate for? </p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Allergies or other problems..."
+                ></textarea>
+              </div>
+      
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </body>
+      </html>
+            
